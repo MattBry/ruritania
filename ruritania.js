@@ -4,7 +4,7 @@ const ruritania = require('commander');
 const initializeWorld = require('./builders/world').buildWorld;
 const add = require('./builders/menu').beginAdd;
 const build = require('./build').renderWiki;
-ruritania.version('0.0.2')
+ruritania.version('0.0.3')
   .description('Ruritania worldbuilding CLI');
 
 ruritania.command('render')
