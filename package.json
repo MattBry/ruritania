@@ -1,6 +1,6 @@
 {
   "name": "ruritania",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "cli for worldbuilding",
   "main": "ruritania.js",
   "scripts": {
