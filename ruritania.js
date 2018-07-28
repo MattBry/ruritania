@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+"use strict";
 const ruritania = require('commander');
 const initializeWorld = require('./builders/world').buildWorld;
 const add = require('./builders/menu').beginAdd;

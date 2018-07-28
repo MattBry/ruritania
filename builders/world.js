@@ -1,3 +1,4 @@
+"use strict";
 const fs = require('fs');
 const inquirer = require('inquirer');
 const worldQuestions = [
@@ -17,11 +18,21 @@ const worldQuestions = [
     message: 'Briefly describe your world'
   }
 ]
+
+function setUpFileSystem() {
+  fs.mkdirSync('./data');
+  fs.mkdirSync('./data/world');
+  fs.mkdirSync('./data/countries');
+}
+
 function buildWorld() {
+  if (!fs.existsSync('./data')) {
+    setUpFileSystem();
+  }
   inquirer.prompt(worldQuestions).then(answers => {
     let world = {};
     world.name = answers.name;
-    world.countries = answers.countries.split(',');
+    world.countries = answers.countries.split(', ');
     world.description = answers.description;
     fs.writeFileSync('./data/world/world.json', JSON.stringify(world));
   });

@@ -5,7 +5,10 @@
   <p>{{description}}</p>
   <ul>
     {% for country in countries %}
-    <li>{{ country }}</li>
+    <li>
+      <a href="./countries/{{country}}.html">{{ country }}
+        <a>
+    </li>
     {% endfor %}
   </ul>
 </body>

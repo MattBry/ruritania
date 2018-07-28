@@ -1,3 +1,4 @@
+"use strict";
 const fs = require('fs');
 const inquirer = require('inquirer');
 const countryQuestions = [
@@ -23,13 +24,15 @@ const countryQuestions = [
   }
 ]
 function buildCountry() {
-  inquirer.prompt(countryQuestions).then(answers => {
-    let world = {};
-    world.name = answers.name;
-    world.countries = answers.countries.split(', ');
-    world.description = answers.description;
-    fs.writeFileSync('./data/world/world.json', JSON.stringify(world));
+  let country = inquirer.prompt(countryQuestions).then(answers => {
+    let country = {};
+    country.name = answers.name;
+    country.government = answers.government;
+    country.economy = answers.economy;
+    fs.writeFileSync(`./data/countries/${country.name}.json`, JSON.stringify(country));
+    return country
   });
+  return country;
 }
 
 module.exports = {
