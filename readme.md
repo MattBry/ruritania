@@ -21,7 +21,7 @@ Your Ruritania data will exist in two folders in the directory in which you have
 ## FAQ
 Q. This sucks
 
-A. It's version 0.0.3, sod off.
+A. It's version 0.0.4, sod off.
 
 Q. That was very rude.
 
