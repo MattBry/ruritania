@@ -21,7 +21,7 @@ Your Ruritania data will exist in two folders in the directory in which you have
 ## FAQ
 Q. This is very incomplete.
 
-A. Sorry. This is a labor of love I work on when I feel like it. Entities will be made more complex, and more entities will be added, in the future.
+A. Sorry. This is a labor of love I work on when I can. Entities will be made more complex, and more entities will be added, in the future.
 
 Q. The CLI doesn't work.
 
