@@ -19,14 +19,10 @@ A command line tool for worldbuilding
 
 Your Ruritania data will exist in two folders in the directory in which you have created: data and wiki. The data folder contains JSON files that are used to render the HTML files for the wiki.
 ## FAQ
-Q. This sucks
-
-A. It's version 0.0.4, sod off.
-
-Q. That was very rude.
+Q. This is very incomplete.
 
 A. Sorry. This is a labor of love I work on when I feel like it. Entities will be made more complex, and more entities will be added, in the future.
 
 Q. The CLI doesn't work.
 
-A. Install a newer version of Node with `nvm install` or switch to a newer one with `nvm use`, you troglodyte.
+A. Install a newer version of Node with `nvm install` or switch to a newer one with `nvm use`.
